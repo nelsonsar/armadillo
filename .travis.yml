@@ -3,6 +3,9 @@ php:
   - 5.3
   - 5.4
   - 5.5
-script: phpunit --bootstrap vendor/autoload.php tests/
+script: phpunit --coverage-clover=coverage.clover --bootstrap vendor/autoload.php tests/
+after_script:
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
 install:
   - composer install
