@@ -1,4 +1,18 @@
 {
+  "name": "nelsonsar/armadillo",
+  "type": "library",
+  "homepage": "http://github.com/nelsonsar/armadillo",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nelson Senna",
+      "email": "onelsonsenna@gmail.com"
+    },
+    {
+      "name": "Gabriel Schmitt",
+      "email": "gabrielsch@outlook.com"
+    }
+  ],
   "require-dev": {
     "phpunit/phpunit": "@stable"
   },
